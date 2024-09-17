@@ -2,6 +2,7 @@
 
 * Студент: [Владимир Келехсаев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2565535).
 * Наставник: [Дарья Шестерина] (https://htmlacademy.ru/profile/id221124).
+* Сайт: [Мой сайт проекта](https://vovke31.github.io/2565535-sedona-2/).
 
 ---
 
