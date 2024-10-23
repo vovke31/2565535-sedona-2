@@ -42,7 +42,7 @@
           </a>
         </li>
       </ul>
-      <button class="header-button" type="button">Хочу сюда!</button>
+      <a class="navigation-user-button button button-link"><span>Хочу сюда!</span></a>
     </nav>
   </header>
   <main class="main-catalog">
@@ -51,7 +51,7 @@
         <h1 class="filter-title">Гостинницы Седоны</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link-home" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -112,8 +112,8 @@
           <input type="number" name="first-price" placeholder="от" value="0">
           <input type="number" name="first-price" placeholder="до" value="9000">
           <input type="range" name="filter-range">
-          <button class="button" type="submit">Применить</button>
-          <button class="button-submit" type="reset">Сбросить</button>
+          <button class="button button-btn" type="submit">Применить</button>
+          <button class="button-submit button" type="reset">Сбросить</button>
         </fieldset>
       </form>
     </section>
@@ -145,8 +145,8 @@
             <a class="catalog-card-link" href="#"><h3 class="catalog-card-title">Amara Resort & Spa</h3></a>
             <p class="catalog-card-text">Гостиница</p>
             <p class="catalog-card-price"><b>От 4000 ₽</b></p>
-            <a class="catalog-card-button button-discription" href="#">Подробнее</a>
-            <button class="catalog-card-button button" type="submit">В избранное</button>
+            <a class="catalog-card-button button button-link" href="#">Подробнее</a>
+            <button class="catalog-card-button button button-btn" type="submit">В избранное</button>
             <p class="catalog-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
             <p class="catalog-card-rating">Рейтинг: 8,5</p>
           </li>
@@ -157,10 +157,10 @@
             <a class="catalog-card-link" href="#"><h3 class="catalog-card-title">Villas at Poco Diablo</h3></a>
             <p class="catalog-card-text">Гостиница</p>
             <p class="catalog-card-price"><b>От 5000 ₽</b></p>
-            <a class="catalog-card-button button-discription" href="#">Подробнее</a>
-            <button class="catalog-card-button button" type="submit">В избранное</button>
+            <a class="catalog-card-button button button-link" href="#">Подробнее</a>
+            <button class="catalog-card-button button button-btn" type="submit">В избранное</button>
             <p class="catalog-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
-            <p class="catalog-card-raitng">Рейтинг: 9,2</p>
+            <p class="catalog-card-rating">Рейтинг: 9,2</p>
           </li>
           <li class="catalog-card-item">
             <a class="catalog-card-link" href="product.html">
@@ -169,8 +169,8 @@
             <a class="catalog-card-link" href="#"><h3 class="catalog-card-title">Desert Quail Inn</h3></a>
             <p class="catalog-card-text">Гостиница</p>
             <p class="catalog-card-price"><b>От 2500 ₽</b></p>
-            <a class="catalog-card-button button-discription" href="#">Подробнее</a>
-            <button class="catalog-card-button button" type="submit">В избранное</button>
+            <a class="catalog-card-button button button-link" href="#">Подробнее</a>
+            <button class="catalog-card-button button button-btn" type="submit">В избранное</button>
             <p class="catalog-card-stars-3"><span class="visually-hidden">3 звезды</span></p>
             <p class="catalog-card-rating">Рейтинг: 6,9</p>
           </li>
@@ -181,8 +181,8 @@
             <a class="catalog-card-link" href="#"><h3 class="catalog-card-title">GreenTree Inn</h3></a>
             <p class="catalog-card-text">Гостиница</p>
             <p class="catalog-card-price"><b>От 1500 ₽</b></p>
-            <a class="catalog-card-button button-discription" href="#">Подробнее</a>
-            <button class="catalog-card-button button" type="submit">В избранное</button>
+            <a class="catalog-card-button button button-link" href="#">Подробнее</a>
+            <button class="catalog-card-button button button-btn" type="submit">В избранное</button>
             <p class="catalog-card-stars-2"><span class="visually-hidden">2 звезды</span></p>
             <p class="catalog-card-rating">Рейтинг: 5,0</p>
           </li>
@@ -211,13 +211,13 @@
     <section class="main-subscribe">
       <h2 class="visually-hidden">Рассылка по почте</h2>
       <div class="subscribe-subscription">
-        <p class="subscription-title">Подпишитесь на рассылку</p>
-        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-title-catalog advantages-title">Подпишитесь на рассылку</p>
+        <p class="subscription-text-catalog advantages-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       </div>
       <form id="subscribe-form" action="https://echo.htmlacademy.ru" class="subscribe-form" method="post">
         <label class="subscribe-label visually-hidden" for="subscribe-form-email">Ваш e-mail</label>
         <input type="email" id="subscribe-form-email" class="subscribe-input" placeholder="Ваш e-mail">
-        <button class="subscribe-button button" type="submit">Подписаться</button>
+        <button class="subscribe-button button button-btn" type="submit">Подписаться</button>
       </form>
     </section>
     <footer class="main-footer">
@@ -240,7 +240,7 @@
       </ul>
       <a class="footer-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-dev" href="https://htmlacademy.ru" >
-        <img class="dev-company" src="images/logo/HTML Academy.svg" width="115" height="33" alt="Лого разработчика">
+        <img class="dev-company" src="images/icons/logo-dev.svg" width="115" height="33" alt="Лого разработчика">
       </a>
     </footer>
   </main>

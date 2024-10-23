@@ -3,7 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -50,7 +50,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0%;
   text-align: left;
   text-transform: capitalize;
   color: inherit;
@@ -61,8 +60,9 @@ body {
   background-image: url("../images/background-1.jpg");
   background-repeat: no-repeat;
   text-align: center;
-  width: 1200px;
-  height: 485px;
+  background-size: cover;
+  background-color:#abd3f6a6 ;
+  background-position: center;
 }
 
 .advantages-header{
@@ -72,17 +72,225 @@ body {
   text-align: center;
 }
 
-.advantage-title {
+.advantages-title {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  letter-spacing: 0%;
+  text-align: center;
 }
 
+.advantages-text {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-card-image-discription {
+  background: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+}
+
+.advantages-card-discription {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-card-basic {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+
+.advantages-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-card-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-link {
+  font-size: 16px;
+  line-height: 20px;
+  background: rgb(117, 97, 87);
+}
+
+.button-btn {
+  background: rgb(130, 179, 211);
+}
+
+.booking-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe {
+  background-image: url(../images/background-2.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  background-color:#abd3f6a6 ;
+  background-position: center;
+}
+
+.subscribe-title {
+  color: rgb(255, 255, 255);
+}
+
+.subscribe-text {
+  color: rgb(255, 255, 255);
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe-input {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer-contacts {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/*Catalog*/
+
 .filter {
+  color: rgb(255, 255, 255);
   background-image: url(../images/background-3.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 412px;
+  background-size: cover;
+  background-color: rgb(130, 179, 211);
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.filter-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.filter-checkbox-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+
+.filter-radio-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+
+.button-submit {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sort-control {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.catalog-card-link {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-decoration-line: none;
+}
+
+.catalog-card-text {
+  color: rgb(51, 51, 51);
+}
+
+.catalog-card-price {
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  text-align: right;
+}
+
+.catalog-card-rating {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: rgb(242, 242, 242);
+}
+
+
+.pagination {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: rgb(130, 179, 211);
+}
+
+.pagination-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.pagination-current {
+  background: rgb(242, 242, 242);
 }
