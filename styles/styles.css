@@ -32,6 +32,9 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -39,6 +42,29 @@ body {
   line-height: 21px;
   color: black;
   background-color: #fff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header {
@@ -56,20 +82,56 @@ body {
   text-decoration: none;
 }
 
+.navigation-user {
+  list-style-type: none;
+}
+
 .hero {
   background-image: url("../images/background-1.jpg");
   background-repeat: no-repeat;
   text-align: center;
-  background-size: cover;
+  background-size: 100% auto;
   background-color:#abd3f6a6 ;
   background-position: center;
 }
 
 .advantages-header{
-  width: 1200px;
   height: auto;
   padding: 69px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.advantages-item-image {
+  display: flex;
+  width: 1200px;
+  flex-wrap: nowrap;
+}
+
+.advantages-image {
+  height: 100%;
 }
 
 .advantages-title {
@@ -78,6 +140,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+  max-width: 620px;
 }
 
 .advantages-text {
@@ -88,17 +151,28 @@ body {
   text-align: center;
 }
 
-.advantages-card-image-discription {
-  background: rgb(130, 179, 211);
-  color: rgb(255, 255, 255);
-}
 
 .advantages-card-discription {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 385px;
+  padding: 103px 85px;
+  box-sizing: border-box;
 }
 
 .advantages-card-basic {
   background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-image-discription {
+  background: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+}
+
+.basic-cards {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 
@@ -116,6 +190,47 @@ body {
   line-height: 21px;
   text-align: center;
 }
+
+.invite-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.invite-card-basic {
+  background: rgb(255, 255, 255);
+}
+
+.invite-card-text {
+  max-width: 230px;
+}
+
+.advantages-invite-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  margin: 0 auto;
+  gap: 20;
+}
+
+.booking {
+  min-height: 406px;
+  height: 100%;
+}
+
+.booking-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 96px 304px;
+  margin: 0;
+  }
+
 
 .button {
   border-radius: 4px;
@@ -141,6 +256,17 @@ body {
 .booking-button {
   font-size: 20px;
   line-height: 36px;
+  width: 376px;
+  height: 52px;
+  padding: 8px 50px;
+  box-sizing: border-box;
+}
+
+.navigation-user-button {
+  width: 160px;
+  height: 36px;
+  padding: 8px 50px 8px 50px;
+  margin-left: 20px;
 }
 
 .subscribe {
@@ -150,6 +276,15 @@ body {
   background-size: cover;
   background-color:#abd3f6a6 ;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 1200px;
+  height: 415px;
+  box-sizing: border-box;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscribe-title {
@@ -163,6 +298,7 @@ body {
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
+
 }
 
 .subscribe-input {
@@ -172,6 +308,19 @@ body {
   line-height: 24px;
   text-align: left;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 40px 70px 30px;
+}
+
+
 
 .footer-contacts {
   color: rgb(0, 0, 0);
@@ -183,6 +332,10 @@ body {
   text-decoration: none;
 }
 
+.footer-socials {
+  list-style-type: none;
+}
+
 
 /*Catalog*/
 
@@ -192,6 +345,33 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(130, 179, 211);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 35px 70px 70px 70px;
+}
+
+.filter-form {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+}
+
+.filter-header {
+  position: static;
+  width: 1060px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+
+}
+
+.breadcrumbs-link-home {
+  text-decoration: none;
 }
 
 .breadcrumbs-link {
@@ -207,6 +387,10 @@ body {
   line-height: 24px;
   text-align: left;
   text-transform: capitalize;
+}
+
+.filter-list {
+  list-style-type: none;
 }
 
 .filter-checkbox-label {
@@ -239,6 +423,19 @@ body {
   text-align: left;
 }
 
+.sort-view {
+  list-style-type: none;
+}
+
+.sort-view-tile {
+  background-image: url(../images/icons/filter-grids.svg);
+  color: black;
+}
+
+.catalog-cards {
+  list-style-type: none;
+}
+
 .catalog-card-link {
   color: rgb(0, 0, 0);
   font-size: 24px;
@@ -269,6 +466,14 @@ body {
   background: rgb(242, 242, 242);
 }
 
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+
+}
+
 
 .pagination {
   font-size: 20px;
@@ -277,6 +482,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
+  list-style-type: none;
 }
 
 .pagination-link {
@@ -293,4 +499,46 @@ body {
 
 .pagination-current {
   background: rgb(242, 242, 242);
+}
+
+
+/*Сетка страниц и крупных блоков*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  min-width: 340px;*/
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: auto;*/
 }

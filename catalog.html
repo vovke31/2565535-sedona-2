@@ -9,10 +9,12 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo-image">
-        <img src="images/icons/logo-sedona.svg" alt="Логотип Седона" width="140" height="70" class="">
-      </a>
       <ul class="navigation-list">
+        <li class="navigation-list-item navigation-list-logo">
+          <a class="navigation-logo-image">
+            <img src="images/icons/logo-sedona.svg" alt="Логотип Седона" width="140" height="70" class="">
+          </a>
+        </li>
         <li class="navigation-list-item">
           <a href="index.html" class="navigation-link">
             Главная
@@ -41,8 +43,10 @@
             <span class="navigation-user-featured">12</span>
           </a>
         </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-button button button-link"><span>Хочу сюда!</span></a>
+        </li>
       </ul>
-      <a class="navigation-user-button button button-link"><span>Хочу сюда!</span></a>
     </nav>
   </header>
   <main class="main-catalog">
@@ -127,6 +131,7 @@
           </select>
           <ul class="sort-view">
             <li class="sort-view-type">
+              <a href="#" class="sort-view-tile"></a>
               <span class="visually-hidden">Вид плиткой</span>
             </li>
             <li class="sort-view-type">
